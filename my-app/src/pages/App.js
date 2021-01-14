@@ -1,15 +1,14 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
-import Accordion from "@material-ui/core/Accordion";
-import AccordionSummary from "@material-ui/core/AccordionSummary";
-import AccordionDetails from "@material-ui/core/AccordionDetails";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
-import About from "./components/about-us.js";
-import Mission from "./components/mission.js";
-import Version from "./components/versions.js";
-import Setup from "./components/setup.js";
+import About from "../components/about-us.js";
+import Mission from "../components/mission.js";
+import Version from "../components/versions.js";
+import Setup from "../components/setup.js";
+
+
 
 class App extends React.Component {
   render() {
@@ -41,23 +40,9 @@ class App extends React.Component {
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <Paper elevation={2}>
-              <Accordion>
-                <AccordionSummary>
-                  <Typography>
-                    <h1>How Inteliband works</h1> <p>*click here*</p>
-                  </Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                  <Typography>
-                    <p>
-                      The Inteliband works by placing a heart rate sensor on the
-                      undersode of the watch and monitors for irregular vital
-                      patterns and alerts the paramedics/authorities once
-                      detected.
-                    </p>
-                  </Typography>
-                </AccordionDetails>
-              </Accordion>
+              <Typography>
+                <h1>How Inteliband works</h1>
+              </Typography>
             </Paper>
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
