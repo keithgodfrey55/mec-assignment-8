@@ -33,9 +33,7 @@ ReactDOM.render(
           </ul>
         </nav>
         <Switch>
-          <Route path="/" exact component={Button}>
-            <App />
-          </Route>
+          
           <Route path="/pages/how_works" component={Button}>
             <Work />
           </Route>
@@ -46,6 +44,10 @@ ReactDOM.render(
             <Compatible />
           </Route>
           <Route path="/components/feedback" component={Feedback} />
+          
+          <Route path="/" exact component={Button}>
+            <App />
+          </Route>
         </Switch>
       </div>
     </Router>
