@@ -7,6 +7,7 @@ import About from "../components/about-us.js";
 import Mission from "../components/mission.js";
 import Version from "../components/versions.js";
 import Setup from "../components/setup.js";
+import Compatible from "../components/compatible-devices.js";
 
 
 
@@ -45,15 +46,7 @@ class App extends React.Component {
             <Setup steps={steps} />
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
-            <Button
-              variant="contained"
-              color="primary"
-              onClick={() => {
-                alert("IOS 6+ and higher, Android 8.0 and higher");
-              }}
-            >
-              Compatible Devices
-            </Button>
+            <Compatible />
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <Paper elevation={2}>

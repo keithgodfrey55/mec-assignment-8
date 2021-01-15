@@ -5,6 +5,7 @@ import Button from "@material-ui/core/Button";
 import App from "./pages/App";
 import Work from "./pages/how_works";
 import Version from "./components/versions.js";
+import Compatible from "./components/compatible-devices.js";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 ReactDOM.render(
@@ -20,6 +21,9 @@ ReactDOM.render(
               <Link to="/components/versions.js">Versions</Link>
             </li>
             <li>
+              <Link to="/components/compatible-devices.js">Compatible Devices</Link>
+            </li>
+            <li>
               <Link to="/">Home</Link>
             </li>
           </ul>
@@ -33,6 +37,9 @@ ReactDOM.render(
           </Route>
           <Route path="/components/versions.js" component={Button}>
             <Version />
+          </Route>
+          <Route path="/components/compatible-devices.js" component={Button}>
+            <Compatible />
           </Route>
         </Switch>
       </div>
