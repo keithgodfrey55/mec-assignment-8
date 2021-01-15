@@ -42,13 +42,10 @@ ReactDOM.render(
           <Route path="/components/versions.js" component={Button}>
             <Version />
           </Route>
-<<<<<<< Updated upstream
           <Route path="/components/compatible-devices.js" component={Button}>
             <Compatible />
           </Route>
-=======
           <Route path="/components/feedback" component={Feedback} />
->>>>>>> Stashed changes
         </Switch>
       </div>
     </Router>
