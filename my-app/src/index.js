@@ -7,6 +7,7 @@ import Work from "./pages/how_works";
 import Version from "./components/versions.js";
 import Compatible from "./components/compatible-devices.js";
 import reportWebVitals from "./reportWebVitals";
+import Feedback from "./components/feedback.js";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 ReactDOM.render(
   <React.StrictMode>
@@ -26,6 +27,9 @@ ReactDOM.render(
             <li>
               <Link to="/">Home</Link>
             </li>
+            <li>
+              <Link to="/components/feedback">Feedback</Link>
+            </li>
           </ul>
         </nav>
         <Switch>
@@ -38,9 +42,13 @@ ReactDOM.render(
           <Route path="/components/versions.js" component={Button}>
             <Version />
           </Route>
+<<<<<<< Updated upstream
           <Route path="/components/compatible-devices.js" component={Button}>
             <Compatible />
           </Route>
+=======
+          <Route path="/components/feedback" component={Feedback} />
+>>>>>>> Stashed changes
         </Switch>
       </div>
     </Router>
